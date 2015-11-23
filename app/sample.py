@@ -20,7 +20,8 @@ class vtSendResource:
 
             url = "https://www.virustotal.com/vtapi/v2/url/scan"
             analise = result['url']
-            payload = "-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"url\"\r\n\r\n" + analise + "\r\n-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"apikey\"\r\n\r\n2ab17da03f5f5268238aedbf2da10f850b28d7f1d5dd100b404a9ae4c10d069e\r\n-----011000010111000001101001--"
+            apikey = 'YOUR_APIKEY'
+            payload = "-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"url\"\r\n\r\n" + analise + "\r\n-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"apikey\"\r\n\r\n" + apikey + "\r\n-----011000010111000001101001--"
             headers = {
                 'content-type': "multipart/form-data; boundary=---011000010111000001101001",
                 'cache-control': "no-cache"
@@ -43,7 +44,8 @@ class vtReportResource:
 
             url = "https://www.virustotal.com/vtapi/v2/url/report"
             analise = result['url']
-            payload = "-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"resource\"\r\n\r\n" + analise + "\r\n-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"apikey\"\r\n\r\n2ab17da03f5f5268238aedbf2da10f850b28d7f1d5dd100b404a9ae4c10d069e\r\n-----011000010111000001101001--"
+            apikey = 'YOUR_APIKEY'
+            payload = "-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"resource\"\r\n\r\n" + analise + "\r\n-----011000010111000001101001\r\nContent-Disposition: form-data; name=\"apikey\"\r\n\r\n" + apikey + "\r\n-----011000010111000001101001--"
             headers = {
                 'content-type': "multipart/form-data; boundary=---011000010111000001101001",
                 'cache-control': "no-cache"
