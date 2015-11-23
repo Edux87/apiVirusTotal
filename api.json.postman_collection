@@ -1,0 +1,95 @@
+{
+	"id": "e910897c-3b66-8fa7-7419-e043cebaed9e",
+	"name": "ServicesAnalisisURL",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"id": "1b4dd83b-12dc-7e05-8956-a99f821a31d6",
+			"name": "VirusTotal",
+			"description": "",
+			"order": [
+				"a0deebec-13a9-e986-00fc-9487bc47795e",
+				"abcdee97-fe25-9389-20c9-34f5c84ba0cb",
+				"a6bbcdd4-96f6-5a54-f1a0-ab99d43768d7"
+			],
+			"owner": "",
+			"collectionId": "e910897c-3b66-8fa7-7419-e043cebaed9e"
+		}
+	],
+	"timestamp": 1448314968171,
+	"owner": "211476",
+	"remoteLink": "https://www.getpostman.com/collections/146d918ded7150f70c19",
+	"public": false,
+	"requests": [
+		{
+			"id": "a0deebec-13a9-e986-00fc-9487bc47795e",
+			"headers": "Content-Type: application/json\n",
+			"url": "http://localhost:8000",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "resource",
+					"value": "http://apertum-design.pl/siteazul/voeazul/",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "apikey",
+					"value": "2ab17da03f5f5268238aedbf2da10f850b28d7f1d5dd100b404a9ae4c10d069e",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1448315248453,
+			"name": "http://localhost:8000",
+			"description": "",
+			"collectionId": "e910897c-3b66-8fa7-7419-e043cebaed9e"
+		},
+		{
+			"id": "a6bbcdd4-96f6-5a54-f1a0-ab99d43768d7",
+			"url": "http://localhost:8000/report",
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "",
+			"preRequestScript": "",
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"version": 2,
+			"name": "http://localhost:8000/report",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "e910897c-3b66-8fa7-7419-e043cebaed9e",
+			"folder": "1b4dd83b-12dc-7e05-8956-a99f821a31d6",
+			"rawModeData": "{\"url\": \"http://apertum-design.pl/siteazul/voeazul/\"}"
+		},
+		{
+			"id": "abcdee97-fe25-9389-20c9-34f5c84ba0cb",
+			"url": "http://localhost:8000/analise",
+			"method": "POST",
+			"headers": "Content-Type: application/json\n",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "",
+			"preRequestScript": "",
+			"currentHelper": "normal",
+			"pathVariables": {},
+			"version": 2,
+			"name": "http://localhost:8000/analise",
+			"description": "",
+			"descriptionFormat": "html",
+			"collectionId": "e910897c-3b66-8fa7-7419-e043cebaed9e",
+			"folder": "1b4dd83b-12dc-7e05-8956-a99f821a31d6",
+			"rawModeData": "{\"url\": \"http://apertum-design.pl/siteazul/voeazul/\"}"
+		}
+	]
+}
